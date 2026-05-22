@@ -1,6 +1,8 @@
 import json
 import torch
 import nltk
+nltk.download('punkt')
+nltk.download('punkt_tab')
 import random
 from datetime import datetime
 import numpy as np
@@ -161,6 +163,7 @@ def index():
 # =========================================
 
 @app.route('/symptom', methods=['GET', 'POST'])
+print(request.json)
 def predict_symptom():
 
     print("Request json:", request.json)
