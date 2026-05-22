@@ -163,7 +163,6 @@ def index():
 # =========================================
 
 @app.route('/symptom', methods=['GET', 'POST'])
-print(request.json)
 def predict_symptom():
 
     print("Request json:", request.json)
