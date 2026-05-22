@@ -71,7 +71,7 @@ symptom_severity = pd.read_csv(
     "data/Symptom-severity.csv"
 )
 
-symptom_severity = symptom_severity.applymap(
+symptom_severity = symptom_severity.map(
     lambda s:
     s.lower().strip().replace(" ", "_")
     if isinstance(s, str)
