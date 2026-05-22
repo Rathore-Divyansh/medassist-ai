@@ -1,0 +1,8 @@
+flask
+torch
+nltk
+numpy
+pandas
+scikit-learn
+matplotlib
+gunicorn
